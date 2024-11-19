@@ -17,16 +17,20 @@
 }
 
 @layer components {
+    /* Main */
 
+    .pginicial-containe{
+        @apply w-screen h-screen
+    }
 
 
     /* Header */
 
     .header {
-        @apply flex justify-between text-black items-center px-[1.75%] bg-[#ffffff] sticky top-0 z-[1] ;
+        @apply flex justify-around h-28 text-black items-center px-[1.75%] py-[1.75%] bg-[#ffffff] sticky top-0 z-[1] ;
     
     .caixa-logo{
-        @apply w-[15%];
+        @apply w-[20%];
     }
     
     .logo {
@@ -393,8 +397,8 @@
     }
 
 .areas-container-geral {
-    @apply py-[2.5%] px-[13%] bg-[#DCDBD5] ;
-    
+    @apply py-[2.5%] px-[7%] bg-[#DCDBD5] h-full w-full;
+
     .title-areas{
         @apply text-[3rem] font-bold text-[#45433A];
     }
@@ -402,28 +406,24 @@
         @apply text-[1.5rem] text-[#45433A] ;
     }
     .container-areas {
-        @apply flex justify-between my-[2rem]  ;
+        @apply  flex gap-4 justify-between w-full my-[2rem] h-full;
         
-        h2{
-            @apply text-[3rem] text-[#4C4A41] font-[500];
+        h3{
+            @apply text-[3rem] px-3 text-[#4C4A41] font-[500];
         }
         
         p
         {
-            @apply text-[#4C4A41] text-[1.4rem]
+            @apply text-left p-3 text-[#4C4A41] text-[1.4rem]
         }
         .card-areas{
-            @apply w-[30%] h-fit;
+            @apply bg-white text-wrap rounded-t-[10px] w-full items-center h-[600px];
                 .img-card{
-                    @apply w-[100%] rounded-t-[10px];
+                    @apply h-[200px] w-full rounded-t-[10px];
                 }
-                .txt-card-areas{
-                    @apply p-[5%] rounded-b-[10px] 
-                    bg-white text-[#1a3]
-                }
-            }
+            }   
         }
-    }
+    }   
 
 @media (max-width: 1024px) {
 

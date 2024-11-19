@@ -8,7 +8,7 @@ import sobrenos from "../../public/sobrenos.jpg"
 import emissaoCo2 from "../../public/emissaoCarbono.webp"
 import solar from "../../public/solar.jpg"
 import sisEletrico from "../../public/sisEletrico.jpg"
-import agroSus from "../../public/agroSus.jpg"
+import agroSus from "../../public/richardybs.jpg"
 import { RespostaLogin, RespostaLoginEmpresa } from '@/types/types'
 import Link from 'next/link'
 
@@ -103,38 +103,26 @@ export default function page() {
 
 
       
-      <div className="areas-container-geral">
+<div className="areas-container-geral">
   <h2 className="title-areas">Áreas <span>impactadas</span></h2>
   <p className="subTitle-areas">Conheça os setores beneficiados pelo uso de energias renováveis</p>
   <div className="container-areas">
-    {[
-      {
-        title: "Energia Solar",
-        description: "A energia solar utiliza a luz do sol para gerar eletricidade limpa, sustentável e acessível. Essa tecnologia inovadora é uma das alternativas mais promissoras para enfrentar as mudanças climáticas, reduzindo nossa dependência de combustíveis fósseis e promovendo um futuro mais sustentável.",
-        image: solar,
-        alt: "Sistemas de energia solar em áreas agrícolas"
-      },
-      {
-        title: "Agronegócio",
-        description: "O agronegócio está se transformando com o uso de fontes de energia renováveis, como a solar e a eólica. Essas tecnologias ajudam a reduzir custos, aumentar a eficiência e minimizar o impacto ambiental, garantindo práticas agrícolas mais sustentáveis e responsáveis.",
-        image: agroSus,
-        alt: "Plantas solares em áreas industriais"
-      },
-      {
-        title: "Sistema",
-        description: "Os sistemas elétricos modernos integram fontes renováveis, como a energia hídrica, solar e eólica, para oferecer uma eletricidade mais limpa e confiável. Essa evolução é essencial para criar redes elétricas sustentáveis que atendam às demandas do presente sem comprometer os recursos futuros.",
-        image: sisEletrico,
-        alt: "Usos diversificados de energia hídrica"
-      }
-    ].map((area, index) => (
-      <div key={index} className="card-areas">
-        <Image src={area.image} alt={area.alt} className="img-card" />
-        <div className="txt-card-areas">
-          <h2>{area.title}</h2>
-          <p>{area.description}</p>
-        </div>
+      <div className="card-areas">
+        <Image className='img-card' src={agroSus} alt='solar'></Image>
+        <h3>Energia Solar</h3>
+        <p>A energia solar utiliza a luz do sol para gerar eletricidade limpa, sustentável e acessível. Essa tecnologia inovadora é uma das alternativas mais promissoras para enfrentar as mudanças climáticas, reduzindo nossa dependência de combustíveis fósseis e promovendo um futuro mais sustentável.</p>
       </div>
-    ))}
+      <div className="card-areas">
+        <Image className='img-card' src={agroSus} alt='solar'></Image>
+        <h3>Agronegócio</h3>
+        <p>O agronegócio está se transformando com o uso de fontes de energia renováveis, como a solar e a eólica. Essas tecnologias ajudam a reduzir custos, aumentar a eficiência e minimizar o impacto ambiental, garantindo práticas agrícolas mais sustentáveis e responsáveis.</p>
+      </div>
+      <div className="card-areas">
+        <Image className='img-card' src={agroSus} alt='solar'></Image>
+        <h3>Sistema</h3>
+        <p>Os sistemas elétricos modernos integram fontes renováveis, como a energia hídrica, solar e eólica, para oferecer uma eletricidade mais limpa e confiável. Essa evolução é essencial para criar redes elétricas sustentáveis que atendam às demandas do presente sem comprometer os recursos futuros.</p>
+      </div>
+
   </div>
 </div>
 

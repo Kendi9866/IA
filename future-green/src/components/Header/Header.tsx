@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { RespostaLogin, RespostaLoginEmpresa } from "@/types/types";
-import logo from "@/../public/Logo.png";
+import logo from "@/../public/Logo2.png";
 import { useRouter } from "next/navigation";
 
 export default function Header() {
@@ -38,7 +38,7 @@ export default function Header() {
     <header className="header">
       <div className="caixa-logo">
         <Link href="/">
-          <Image src={logo} alt="Logo" className="logo" />
+          <Image src={logo} alt="Logo" className="w-44" />
         </Link>
       </div>
       <nav className="menu">
